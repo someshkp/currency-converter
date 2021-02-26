@@ -1,0 +1,60 @@
+.App{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+h1{
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+.card{
+  border: 1px solid rgb(196, 194, 194);
+  padding: 20px;
+  background-color: rgb(196, 194, 194);
+  border-radius: 10px;
+}
+
+.input{
+  width: 100%;
+  padding: 14px 20px;
+  font-size: larger;
+  align-items: row;
+  outline: none;
+  border: 1px solid rgb(196, 194, 194);
+  border-radius: 5px;
+ 
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+.row1{
+  padding: 50px;
+}
+.row2{
+  padding: 50px;
+}
+.equal{
+  margin: 120px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.options{
+  width: 50%;
+  padding: 14px 20px;
+  margin-top: 20px;
+  font-size: larger;
+  outline: none;
+  border: 1px solid rgb(116, 114, 114);
+  border-radius: 5px;
+  
+}
