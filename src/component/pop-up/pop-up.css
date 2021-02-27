@@ -10,8 +10,13 @@
     background-color: rgba(0,0,0, 0.9);  
   }  
   .popup-inner{  
-   margin: 200px 700px 0 700px;
-   border: 2px solid white;
-   background-color: rgb(255, 255, 255);
+   min-width: 25%;
+   min-height: 65%;
+   margin-top: 8%;
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid #6568F4;
+   background-color: #6568F4;
    border-radius: 20px;
   }
