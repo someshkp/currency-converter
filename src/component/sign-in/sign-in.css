@@ -5,13 +5,11 @@ body{
 }
 
 .sign-in{
-    width: 300px;
-    box-shadow: 0 0 10x 0 rgba(0,0,0,0.3);
+    width: max-content;
     background: white;
-    padding: 10px;
-    margin: 8% auto 40px 40px;
+    padding: 1rem;
+    margin: 1rem;
     text-align: center;
-    
 }
 
 .sign-in h1{
@@ -23,7 +21,6 @@ body{
     border-radius: 10px;
     padding: 10px;
     margin: 10px 0;
-    width:100%;
     border: 1px solid #999;
     outline: none;
 }
@@ -55,7 +52,7 @@ hr{
     margin: -22px auto 20px;
 }
 img{
-    width: 150px;
-    margin-top: -120px;
+    width: 120px;
+    margin-top: -94px;
     border-radius: 50%;
 }

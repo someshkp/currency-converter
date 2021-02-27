@@ -5,7 +5,6 @@ import SignIn from '../sign-in/sign-in';
 const SignInAndSignUp = () =>(
     <div className="sign-in-and-sign-up">
         <SignIn/>
-        
     </div>
 )
 
