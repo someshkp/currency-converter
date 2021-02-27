@@ -1,20 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
-import {} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ResetPage from './resetpage/reset-password'
 import SignUpPage from './signup-page/signup-page'
 import HomePage from './home-page/home-page'
 
 
 function App() { 
+  const [loggedIn, setLoggedIn] = useState(false);
 
+  const updateLoggedInStatus = (status) => {
+    setLoggedIn(status)
+  }
   return (
     <BrowserRouter>
-     <Route exact path='/' component={HomePage}/>
-     <Route  path='/reset-password' component={ResetPage}/>
-     <Route  path='/sign-up' component={SignUpPage}/>
-  </BrowserRouter>
+      <Switch>
+        <Route exact path='/'>
+          <HomePage loggedIn={loggedIn} updateLoggedInStatus={updateLoggedInStatus}/>
+        </Route>
+        <Route  path='/reset-password'>
+          <ResetPage updateLoggedInStatus={updateLoggedInStatus}/>
+        </Route>
+        <Route  path='/sign-up' >
+          <SignUpPage updateLoggedInStatus={updateLoggedInStatus}/>
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 

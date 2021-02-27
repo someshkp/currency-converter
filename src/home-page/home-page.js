@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './home-page.css';
 import Convert from '../component/convert';
 
 import Popup from '../component/pop-up/pop-up'; 
@@ -8,7 +7,7 @@ import Navbar from '../component/navbar/navbar';
 
 const BASE_URL = 'https://api.exchangeratesapi.io/latest';
 
-function HomePage() {
+function HomePage({ loggedIn, updateLoggedInStatus }) {
 
   const [currencyOption, setCurrencyOption] = useState([])
   const [fromCurrency, setFromCurrency] = useState()
@@ -59,8 +58,8 @@ function HomePage() {
 
   return (
     <>
-      <Navbar/>
-      <Popup/>
+      <Navbar updateLoggedInStatus={updateLoggedInStatus} />
+      <Popup loggedIn={loggedIn} updateLoggedInStatus={updateLoggedInStatus} />
       <div className="App">
         <div className="card">
           <h1>Currency Converter</h1>
@@ -88,7 +87,6 @@ function HomePage() {
             </div>
           </div>
         </div>
-
       </div>
       <div />
     </>
