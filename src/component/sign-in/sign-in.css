@@ -2,31 +2,16 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'IBM Plex Serif', serif;
-}
-
-.sign-in{
-    width: 300px;
-    box-shadow: 0 0 10x 0 rgba(0,0,0,0.3);
-    background: white;
-    padding: 10px;
-    margin: 8% auto 40px 40px;
-    text-align: center;
+    
     
 }
 
 .sign-in h1{
-    color: #1c8adb;
+    color: #fff;
     margin-bottom: 30px;
 }
 
-.input-box {
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px 0;
-    width:100%;
-    border: 1px solid #999;
-    outline: none;
-}
+
 
 .sign-btn{
     color:#fff;
@@ -43,19 +28,29 @@ body{
 
 a{
     text-decoration: none;
+    color: #fff;
 }
 
+
+.input-box {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    width:70%;
+    border: 1px solid #999;
+    outline: none;
+}
 hr{
     margin-top: 20px;
-    width: 100%;
+    width: 80%;
 }
 .or{
-    background: #fff;
+    background: #6568F4;
     width:30px;
     margin: -22px auto 20px;
 }
 img{
     width: 150px;
-    margin-top: -120px;
+    margin-top: -80px;
     border-radius: 50%;
 }
