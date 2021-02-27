@@ -1,16 +1,22 @@
 import React from 'react';
-import SignInAndSignUp from '../sign-in-and-sign-up/sign-in-and-sign-up';
+import SignIn from '../sign-in/sign-in';
 
 import './pop-up.css';
 
-const Popup = () => {
+const Popup = ({ loggedIn, updateLoggedInStatus }) => {
+  if(!loggedIn) {
     return (
       <div className='popup'>
         <div className='popup-inner'>
-            <SignInAndSignUp />
+            <SignIn updateLoggedInStatus={updateLoggedInStatus} />
         </div>
       </div>
     );
+  }
+  
+  else {
+    return null
+  }
 }
 
 
