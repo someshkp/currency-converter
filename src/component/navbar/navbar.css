@@ -4,18 +4,15 @@
     font-size: 1.2rem;
 
 }
-.navbar-logo{
- margin: 0;
- cursor: pointer;
-}
 
 img{
-    width: 97px;
-    margin: 1px 0 0 5px;
+    width: 6rem;
+    margin:2px 0 0 5%;
     border-radius: 50%;
+    cursor: pointer;
     
 }
-a{
+.signout-btn{
     color: rgb(240, 234, 234);
     text-decoration: none;
     font-weight: bold;
@@ -29,10 +26,10 @@ a{
    
 }
 
-a:hover{
+.signout-btn:hover{
     padding: 40px;
     transition: 0.3s ;
-    left:80%;
+    
     background: #fff;
     color: #6568F4;
    

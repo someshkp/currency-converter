@@ -13,7 +13,7 @@ body{
 }
 
 .sign-in h1{
-    color: #1c8adb;
+    color: #fff;
     margin-bottom: 30px;
 }
 
@@ -58,10 +58,10 @@ body{
 
 hr{
     margin-top: 20px;
-    width: 100%;
+    width: 80%;
 }
 .or{
-    background: #fff;
+    background: #6568F4;
     width:30px;
     margin: -22px auto 20px;
 }
