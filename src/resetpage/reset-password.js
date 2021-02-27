@@ -1,8 +1,6 @@
 import React from 'react';
 import './reset-password.css';
 
-import Navbar from '../component/navbar/navbar';
-
 import logo from '../component/img/logo.png';
 
 const ResetPage = () =>(

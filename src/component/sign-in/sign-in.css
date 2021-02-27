@@ -41,6 +41,7 @@ body{
 .sign-link{
     text-decoration: none;
     color: #6568F474;
+    display: inline-block;
 }
 
 .sign-link:hover {
@@ -51,6 +52,10 @@ body{
     transition: 240ms;
 }
 
+.mb-1 {
+    margin-bottom: 1rem;
+} 
+
 hr{
     margin-top: 20px;
     width: 100%;
@@ -60,7 +65,8 @@ hr{
     width:30px;
     margin: -22px auto 20px;
 }
-img{
+
+.sign-in img{
     width: 120px;
     margin-top: -94px;
     border-radius: 50%;

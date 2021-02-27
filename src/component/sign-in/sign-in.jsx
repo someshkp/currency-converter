@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import GoogleSignin from '../google-signin/google-signin'
 import logo from '../img/logo.png'
@@ -48,13 +48,14 @@ function SignIn({ emailSignInStart }) {
                    required 
                    />
 
-                <button type="button" className="sign-btn">Sign In</button>
-                <p><Link to="/reset-password" className="sign-link">Forgot password</Link></p>
-                <hr/>
-                <p className="or">OR</p>
-                <GoogleSignin />
+                <button type="submit" className="sign-btn">Sign In</button>
             </form>
 
+            <p><Link to="/reset-password" className="sign-link">Forgot password</Link></p>
+            <hr/>
+            <p className="or">OR</p>
+            <Link to="sign-up" className="sign-link mb-1">Sign Up</Link>
+            <GoogleSignin />
 
         </div>
     )

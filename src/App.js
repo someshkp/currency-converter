@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Convert from './convert';
 
- import Popup from './component/pop-up/pop-up'; 
+import Popup from './component/pop-up/pop-up'; 
 import Navbar from './component/navbar/navbar';
 
 
@@ -62,11 +62,11 @@ function App() {
   return (
     <>
       <Navbar/>
+      <Popup/>
       <div className="App">
         <div className="card">
           <h1>Currency Converter</h1>
           <div className="container">
-             <Popup/>
             <div className="row1">
               <h2>Currency i have: </h2>
               <Convert currencyOption={currencyOption}
