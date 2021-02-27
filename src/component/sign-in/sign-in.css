@@ -38,8 +38,17 @@ body{
     background-color: #1c8adb;
 }
 
-a{
+.sign-link{
     text-decoration: none;
+    color: #6568F474;
+}
+
+.sign-link:hover {
+    padding: 0px;
+    left:0%;
+    background: #fff;
+    color: #6568F4;
+    transition: 240ms;
 }
 
 hr{

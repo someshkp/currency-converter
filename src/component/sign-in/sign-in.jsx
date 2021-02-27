@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
-
-import SignUp from '../sign-up/sign-up';
+import { Link } from 'react-router-dom';
+import GoogleSignin from '../google-signin/google-signin'
 import logo from '../img/logo.png'
 
 import './sign-in.css';
@@ -8,7 +8,7 @@ import './sign-in.css';
 function SignIn({ emailSignInStart }) {
 
     const [userCredentials, setCredentials] = useState({ email: '', password: '' })
-    
+
     const { email, password } = userCredentials;
 
     const handleSubmit = async event => {
@@ -27,7 +27,7 @@ function SignIn({ emailSignInStart }) {
     return (
         <div className="sign-in">
             <img src={logo} alt="logo" />
-            <h1>Sign Up Now</h1>
+            <h1>Sign In Now</h1>
 
             <form onSubmit={handleSubmit}>
                 
@@ -48,14 +48,11 @@ function SignIn({ emailSignInStart }) {
                    required 
                    />
 
-                <p><span><input type="checkbox"/></span>I agree to the terms of services</p>
                 <button type="button" className="sign-btn">Sign In</button>
-                <p><a href="#">Forgot password ?</a></p>
+                <p><Link to="/reset-password" className="sign-link">Forgot password</Link></p>
                 <hr/>
                 <p className="or">OR</p>
-
-                <SignUp/>
-                
+                <GoogleSignin />
             </form>
 
 
